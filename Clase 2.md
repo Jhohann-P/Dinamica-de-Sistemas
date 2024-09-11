@@ -55,17 +55,17 @@ Figura 1.
 ## 4. Ejemplos
 💡Ejemplo 1: Transformada de inversa de Laplace  
 x''+4x=0            x(0) = 5 ; x'(0)=0  
-Donde: x'' = S^2X(s)-sX(0)-X'(0)
+Donde: x'' = S^2X(s)-sX(0)-X'(0)  
        4x  = 4(X)s  
 s^2X(s)-sX(0)-X'(0) + 4(X)s=0  
 s^2X(s)-5s+ 4(X)s=0  
 X(s)[s^2+4] = 5s  
-X(s)=(5s)/(S^2+4)
-5L^-1{s/s^2+2^2}
-5Cos(2t)
-MATLAB:
-![MATLAB](images/plantilla/matlab.JPG)
-💡Ejemplo 2:
+X(s)=(5s)/(S^2+4)  
+5L^-1{s/s^2+2^2}  
+5Cos(2t)  
+MATLAB:  
+![MATLAB](images/plantilla/matlab.JPG)  
+💡Ejemplo 2:  
 
 ## 5. Figuras
 Figura 1.
