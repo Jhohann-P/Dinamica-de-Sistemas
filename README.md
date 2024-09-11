@@ -46,9 +46,18 @@ Apuntes: 10%
   -Github.  
 ### 3.3. Matlab
 Es un computo de programación númerico, el cual ofrece distintas tareas conforme a la programación matematica, su nombre se deriva de MATrix LABoratory o Laboratorio de matrices).  
-Su sistema se maneja mediante lenguaje de programación unico o propio "Lenguaje M", 
+Su sistema se maneja mediante lenguaje de programación unico o propio "Lenguaje M",
+Figura 1.
 ## 4. Ejemplos
-Si en algún caso pretende dar un ejemplo explicativo ya sea a través de texto o através de ecuaciones matemáticos, utilizar la palabra 'Ejemplo' seguido de una numeración consecutiva dentro de la clase. Utilice el emoji 💡 antecediendo la palabra.
+Se realiza un ejemplo sobre creación de matrices, y suma de estas mismas, un ejemplo podría ser este.  
+A = [7 8 2; 3 2 6; 5 9 4]   
+B = [1 5 2; 6 7 9; 4 7 3]  
+Se establecío la matriz a y b, cada una de estas con sus respectivos datos separados medianamente por una coma dando asi a las filas.  
+Realizando la suma  
+C = A + B;  
+disp(C);
+Si fuera una resta:  
+D= A-B;  
 
 ## 5. Ecuaciones
 Para la edición de ecuaciones debe utilizar la etiqueta '$$' al comienzo y final de la ecuación para que la ecuación quede centrada ocupando una línea. Si se quiere que la ecuación quede integrada en el texto debe utilizar la etiqueta '$' al comienzo y final de la ecuación. Las ecuaciones pueden ser editadas utilizando el código LATEX, en el siguiente enlace encuentran un editor de ecuaciones que les genera el código. http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp . Sin embargo hay muchas otras herramientas que pueden utilizar para esto.
@@ -58,18 +67,9 @@ Para la edición de ecuaciones debe utilizar la etiqueta '$$' al comienzo y fina
 $$R=\frac{V}{I}$$
 
 ## 6. Figuras
-Todas las figuras que incluya deben ser generadas por ustedes, **no utilizar las figuras de las presentaciones**. Para incluir figuras puede seguir los siguientes pasos:
-* Primero escribimos ![]().
-* Después escribimos, dentro de los corchetes, el texto alternativo. Este es opcional y solo entra en acción cuando no se puede cargar la imagen correctamente.
-* Después escribimos, dentro de los paréntesis, la ubicación del archivo (ya sea una url o una ubicación dentro de algun folder local). Se recomienda poner las imágenes en una carpeta que se llame imágenes dentro del repositorio github para que no tengan problemas al cargar las imágenes.
+Figura 1.
+![MATLAB](images/plantilla/matlab.JPG)
 
-💡**Ejemplo 2:**
-
-![Figura de prueba](images/plantilla/Captura2.PNG)
-
-Figura 1. Figura de prueba
-
-Incluya la respectiva etiqueta a modo de descripción de la figura y mantenga numeración consecutiva para todas las figuras de la clase.
 
 ## 7. Tablas
 En caso de necesitar la inclusión de tablas para organizar información se recomienda el uso de la herramienta del siguiente enlace https://www.tablesgenerator.com/markdown_tables , la cual permite organizar la información dentro de la tabla y genera el código markdown automáticamente:
@@ -100,7 +100,13 @@ var sumar2 = function(numero) {
 ```
 
 ## 9. Ejercicios
-Deben agregar 2 ejercicios con su respectiva solución, referentes a los temas tratados en cada una de las clases. Para agregar estos, utilice la etiqueta #, es decir como un nuevo título dentro de la clase con la palabra 'Ejercicios'. Cada uno de los ejercicios debe estar numerado y con su respectiva solución inmediatamente despues del enunciado. Antes del subtitulo de cada ejercicio incluya el emoji 📚
+📚 Determinante de una matriz:  
+A = [7 8 2; 3 2 6; 5 9 4];  
+determinant_A = det(A);  
+disp(determinant_A);  
+![image](https://github.com/user-attachments/assets/613eb84b-0b1b-4727-9c3e-84aab2de60ad)
+
+
 
 ## 10. Conclusiones
 Se realizarón los acuerdos y se establecierón los prefijos para las reglas de calificación, se dió a conocer el syllabus como tema para conllevar a lo largo de el curso.
