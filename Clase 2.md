@@ -1,10 +1,8 @@
 # Transformada de Laplace
-## 1. Objetivos del curso
-Identificar la simbología usada en la representación de sistemas (mecánicos, hidraulicos, 
-eléctricos) para aplicarla en la elaboración de planos y diagramas.  
-Reconocer los tipos de modelamiento y el uso para el análisis de sistemas.  
-### 1.1 Metodología
-Se realizaran clases presenciales teoricas, si se llegan a presentar acontecimientos que impidan llegar a la escuela o dia de virtualidad, se hará la clase mediante la plataforma en TEAMS
+## 1. Conceptos Fundamentales  
+La Transformada de Laplace es una herramienta matemática que convierte una función de una variable real, generalmente el tiempo 
+t, en una función de una variable compleja  
+s. Es ampliamente utilizada en la resolución de ecuaciones diferenciales lineales, sistemas de control, circuitos eléctricos y análisis de señales  
 
 ## 2. Definiciones  
 >🔑*Sistema:* Es una combinación de componentes que actuan conjuntamente para alcanzar un objetivo especifico, la combinación de componentes se puede relacionar por medio de reglas o principios.  
@@ -65,14 +63,10 @@ X(s)=(5s)/(S^2+4)
 5Cos(2t)  
 MATLAB:  
 ![MATLAB](images/plantilla/Clase2(1).JPG)
-💡Ejemplo 2:  
-
-## 5. Figuras
-Figura 1.
 
 
 
-## 6. Código
+## 5. Código
 >> A = [7 8 2; 3 2 6; 5 9 4];  
 >> determinant_A = det(A);  
 >> disp(determinant_A);  
@@ -86,16 +80,56 @@ Figura 1.
     0.1842    0.1711   -0.3026  
 
 ## 7. Ejercicios
-📚 Determinante de una matriz:  
-A = [7 8 2; 3 2 6; 5 9 4];  
-determinant_A = det(A);  
-disp(determinant_A);  
-![image](images/plantilla/CapturaS.JPG)  
-📚 Inversa de una matriz:  
-B = [1 5 2; 6 7 9; 4 7 3];  
-inverse_B = inv(B);  
-disp(inverse_B);  
-![image](images/plantilla/CapturaSo.JPG)  
+📚 Transformada de Laplace:  
+### Ejercicio 1: Transformada de Laplace de \( f(t) = t^2 e^{3t} \)
 
-## 8. Conclusiones
-Se realizarón los acuerdos y se establecierón los prefijos para las reglas de calificación, se dió a conocer el syllabus como tema para conllevar a lo largo de el curso y los diferentes materiales de apoyo, siendo asi como libros y sistemas de abreviación matematica como MATLAB.
+Calcular la transformada de Laplace de \( f(t) = t^2 e^{3t} \).
+
+\[
+\mathcal{L}\{f(t)\} = \int_0^\infty f(t) e^{-st} dt
+\]
+
+Sabemos que:
+
+\[
+\mathcal{L}\{t^n e^{at}\} = \frac{n!}{(s - a)^{n+1}}, \quad \text{para} \quad \Re(s) > a
+\]
+
+Aplicamos con \( n = 2 \) y \( a = 3 \):
+
+\[
+\mathcal{L}\{t^2 e^{3t}\} = \frac{2!}{(s - 3)^3}
+\]
+
+Por lo tanto:
+
+\[
+\mathcal{L}\{t^2 e^{3t}\} = \frac{2}{(s - 3)^3}
+\]
+
+📚 Transformada de laplace:  
+### Ejercicio 2: Transformada de Laplace de \( f(t) = \sin(2t) \)
+
+Calcular la transformada de Laplace de \( f(t) = \sin(2t) \).
+
+Sabemos que:
+
+\[
+\mathcal{L}\{\sin(at)\} = \frac{a}{s^2 + a^2}
+\]
+
+Aplicamos con \( a = 2 \):
+
+\[
+\mathcal{L}\{\sin(2t)\} = \frac{2}{s^2 + 2^2}
+\]
+
+Por lo tanto:
+
+\[
+\mathcal{L}\{\sin(2t)\} = \frac{2}{s^2 + 4}
+\]
+
+
+## 6. Conclusiones
+Se llevaron a cabo las bases matematicas para la resolución de problemas, siendo asi como la solución de ecuaciones diferenciales por el uso de transformada de laplace. Se realizaron ejercicios explicativos y ejercicios de aprendizaje
