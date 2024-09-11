@@ -4,9 +4,7 @@ La Transformada de Laplace es una herramienta matemática que convierte una func
 t, en una función de una variable compleja  
 s. Es ampliamente utilizada en la resolución de ecuaciones diferenciales lineales, sistemas de control, circuitos eléctricos y análisis de señales  
 
-## 2. Definiciones  
->🔑*Sistema:* Es una combinación de componentes que actuan conjuntamente para alcanzar un objetivo especifico, la combinación de componentes se puede relacionar por medio de reglas o principios.  
->🔑*Sistema Dinamico:* Un sistema se llama dinamico si su salida en el presente depende de una entrada en el pasado.  
+## 2. Definiciones   
 >🔑*Modelos Dinamico:* Son aquellos sistemas que varian conforme al tiempo, que son analizables desde la perspectiva matemática  
 >🔑*Sistemas lineas y no lineales:* Se considera un sistema lineal siempre y cuando cumpla con las reglas de un circuito de superposición,.  
 
