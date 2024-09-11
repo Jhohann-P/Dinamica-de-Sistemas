@@ -104,8 +104,11 @@ var sumar2 = function(numero) {
 A = [7 8 2; 3 2 6; 5 9 4];  
 determinant_A = det(A);  
 disp(determinant_A);  
-![image](https://github.com/user-attachments/assets/613eb84b-0b1b-4727-9c3e-84aab2de60ad)
-
+![image](images/plantilla/CapturaS.JPG)
+📚 Inversa de una matriz:  
+B = [1 5 2; 6 7 9; 4 7 3];  
+inverse_B = inv(B);  
+disp(inverse_B);  
 
 
 ## 10. Conclusiones
