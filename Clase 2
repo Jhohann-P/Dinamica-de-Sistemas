@@ -16,34 +16,19 @@ Se realizaran clases presenciales teoricas, si se llegan a presentar acontecimie
 Encontrar funciones que determinan el tiempo de una variable o su cambio.
 ### Derivada de una función
 
-La derivada de una función $f(t)$ con respecto a $t$ se denota como:
-\frac{df(t)}{dt}
-Recordando que la derivada es la pendiente de una curva, tomamos un ejemplo:
-F(x) = x^2
-La derivada de esta función es:
-F'(x) = 2x
-F'(2) = 4
-F'(3) = 6
-### 3.1. Modelos de ecuaciones Diferenciales.
-- Pre Requisitos:  
-  Ecuaciones diferenciales
-- Software:  
-  Matlab  
-  Simulador de circuitos
-- Contenido:  
-  Definiciones  
-  Solución de ecuaciones diferenciales (transformada de laplace)
-- Modelamiento matematico:
-  Mecanicos  
-  Electricos  
-  Hidraulicos  
-  Termicos
-- Diagrama de bloques:
-  Algebla de bloques  
-  Diagrama de flechas (Formula de mason)  
+La derivada de una función $f(t)$ con respecto a $t$ se denota como:  
+\frac{df(t)}{dt}  
+Recordando que la derivada es la pendiente de una curva, tomamos un ejemplo:  
+F(x) = x^2  
+La derivada de esta función es:  
+F'(x) = 2x  
+F'(2) = 4  
+F'(3) = 6  
+### 3.1. Modelos de ecuaciones Diferenciales.  
+a1 d^2F/dt`2 + a2 df/dt + a3f= u(t)  
+Donde la solución se convierte en un función, en este caso función de (t)  
   
-  
-### 3.2. Bibliografía
+### 3.2. Transformada de laplace
 Se usarán los siguienes libros como referencia a lo largo de todo el curso.  
 Libros básicos:  
 Dinámica de Sistemas 1ra Edición Katsuhiko Ogata.  
