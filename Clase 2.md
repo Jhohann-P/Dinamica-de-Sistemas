@@ -64,12 +64,12 @@ X(s)=(5s)/(S^2+4)
 5L^-1{s/s^2+2^2}  
 5Cos(2t)  
 MATLAB:  
-![MATLAB](images/plantilla/matlab.JPG)  
+![MATLAB](images/plantilla/Clase2(1).JPG)
 💡Ejemplo 2:  
 
 ## 5. Figuras
 Figura 1.
-![MATLAB](images/plantilla/matlab.JPG)
+
 
 
 ## 6. Código
