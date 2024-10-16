@@ -24,35 +24,67 @@ U=1/2kx^2
 Donde $k$ es la constante del resorte y $x$ es la deformación.  
 
 ## 4. Ejemplos
-Ejemplo 1:
+💡Ejemplo 1:  
 
-Dado un sistema con un resorte, calcular la energía potencial almacenada si la constante del resorte es $k = 200 , N/m$ y la deformación es $x = 0.05 , m$.
-Solución: U=(1/2)(200)(0.05)^2=0.25J
+Dado un sistema con un resorte, calcular la energía potencial almacenada si la constante del resorte es $k = 200 , N/m$ y la deformación es $x = 0.05 , m$.  
+Solución: U=(1/2)(200)(0.05)^2=0.25J  
 
-Ejemplo 2:
+💡Ejemplo 2:
 
-Un bloque de masa $2 , kg$ se mueve con una velocidad de $3 , m/s$. Calcular su energía cinética.
+Un bloque de masa $2 , kg$ se mueve con una velocidad de $3 , m/s$. Calcular su energía cinética.  
 
-Solución: T=1/2(2)(3)^2=9J
+Solución: T=1/2(2)(3)^2=9J  
+
+💡Ejemplo 3:  
+![image](https://github.com/user-attachments/assets/b12052ab-1391-42bb-9fd5-b9b8cd60d8e7)  
+Energía Total del Sistema Conservativo  
+  
+La energía total \( T + U \) se mantiene constante:  
+  
+$$T + U = \frac{1}{2} m \dot{x}^2 + \frac{1}{2} k x^2 = \text{constante}$$  
+  
+Donde:  
+- \( m \) es la masa.  
+- \( \dot{x} \) es la velocidad de la masa.  
+- \( k \) es la constante del resorte.  
+- \( x \) es la posición de la masa.  
+  
+Derivación de la Energía Total  
+  
+Al derivar la energía total con respecto al tiempo, obtenemos:  
+$$\frac{d}{dt}(T + U) = m \ddot{x} \dot{x} + k x \dot{x} = (m \ddot{x} + k x) \dot{x} = 0$$  
+Por lo tanto, la ecuación de movimiento es:  
+$$m \ddot{x} + k x = 0$$  
 
 ## 5. Ecuaciones
-Para la edición de ecuaciones debe utilizar la etiqueta '$$' al comienzo y final de la ecuación para que la ecuación quede centrada ocupando una línea. Si se quiere que la ecuación quede integrada en el texto debe utilizar la etiqueta '$' al comienzo y final de la ecuación. Las ecuaciones pueden ser editadas utilizando el código LATEX, en el siguiente enlace encuentran un editor de ecuaciones que les genera el código. http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp . Sin embargo hay muchas otras herramientas que pueden utilizar para esto.
+Energía Cinética  
+La energía cinética de un cuerpo está dada por la ecuación:  
+$$T = \frac{1}{2} m v^2$$  
 
-💡**Ejemplo 1:** si se va a representar la ecuación de la ley de Ohm se puede mostrar así $R=\frac{V}{I}$ o también,
+Potencia  
+La potencia es la derivada del trabajo respecto al tiempo:  
+$$P = \frac{dW}{dt}$$  
 
-$$R=\frac{V}{I}$$
+Trabajo Realizado por un Resorte  
+El trabajo realizado por las fuerzas en un resorte se calcula como:  
+$$W = \int_{0}^{x} F \, dx = \int_{0}^{x} Kx \, dx = \frac{1}{2} K x^2$$
+
+Potencia en un Resorte  
+La potencia en un resorte está dada por:  
+$$P = \frac{dW}{dt} = F \dot{x} = K x \dot{x}$$  
+
+Energía Potencial en un Resorte  
+La energía potencial almacenada en un resorte es:  
+$$U = \frac{1}{2} K x^2$$  
+
+Energía Disipada en un Amortiguador  
+La energía disipada por un amortiguador con coeficiente de fricción $b$ se puede expresar como:
+$$\Delta W = \int_{x_1}^{x_2} b \dot{x} \, dx = b \int_{x_1}^{x_2} \dot{x}^2 \, dt = b \int_{\dot{x}_1}^{\dot{x}_2} \dot{x}^2 \, dt$$  
+
+
 
 ## 6. Figuras
-Todas las figuras que incluya deben ser generadas por ustedes, **no utilizar las figuras de las presentaciones**. Para incluir figuras puede seguir los siguientes pasos:
-* Primero escribimos ![]().
-* Después escribimos, dentro de los corchetes, el texto alternativo. Este es opcional y solo entra en acción cuando no se puede cargar la imagen correctamente.
-* Después escribimos, dentro de los paréntesis, la ubicación del archivo (ya sea una url o una ubicación dentro de algun folder local). Se recomienda poner las imágenes en una carpeta que se llame imágenes dentro del repositorio github para que no tengan problemas al cargar las imágenes.
-
-💡**Ejemplo 2:**
-
-Figura 1. Figura de prueba
-
-Incluya la respectiva etiqueta a modo de descripción de la figura y mantenga numeración consecutiva para todas las figuras de la clase.
+Figura 1. Representación de un sistema masa-resorte.
 
 ## 7. Tablas
 
@@ -62,39 +94,55 @@ Incluya la respectiva etiqueta a modo de descripción de la figura y mantenga nu
 | Velocidad             | $v$      | m/s      | 
 | Masa                  | $m$      | KG       | 
 
-Tabla 1. Tabla de ejemplo
-
-Cada tabla debe llevar la etiqueta que describa su contenido y numeración consecutiva para todas las tablas
-
 ## 8. Código
+💡**Matlab:**
+```
 % Código para calcular la energía cinética
 m = 2; % masa en kg
 v = 3; % velocidad en m/s
 T = 0.5 * m * v^2;
 disp(T); % Muestra la energía cinética
-
-
-💡**Ejemplo 4:**
-```
-var sumar2 = function(numero) {
-  return numero + 2;
-}
 ```
 
 ## 9. Ejercicios
-Ejercicio 1: Energía Cinética de una Masa  
-Enunciado:
+📚Ejercicio 1: Energía Cinética de una Masa  
+Enunciado:  
 Calcula la energía cinética de un cuerpo de masa $m$ = 5kg  que se mueve a una velocidad de 
 $𝑣$=10m/s
 Solución:
 La fórmula para la energía cinética es:  
-$$ T = \frac{1}{2} m v^2 $$  
+$$T = \frac{1}{2} m v^2$$  
 Sustituyendo los valores:  
-$$ T = \frac{1}{2} \cdot 5 \, \text{kg} \cdot (10 \, \text{m/s})^2 = 250 \, \text{J} $$  
+$$T = \frac{1}{2} \cdot 5 \, \text{kg} \cdot (10 \, \text{m/s})^2 = 250 \, \text{J}$$  
+
+
+📚Ejercicio 2: Energía Potencial en un Resorte  
+Enunciado:  
+Determina la energía potencial almacenada en un resorte con una constante  
+$𝐾$=200N/m y una deformación de x=0.1m.  
+
+Solución:  
+La energía potencial en un resorte está dada por:  
+$$U = \frac{1}{2} K x^2$$  
+Sustituyendo los valores:  
+$$U = \frac{1}{2} \cdot 200 \, \text{N/m} \cdot (0.1 \, \text{m})^2 = 1 \, \text{J}$$  
+
+
+📚Ejercicio 3: Potencia Disipada en un Amortiguador  
+Enunciado:  
+En un sistema con un amortiguador de coeficiente de fricción b=50N, calcula la energía disipada cuando la velocidad inicial es  
+x'= 2m/s y la velocidad final es de x2'=0m/s  
+Solución:  
+La energía disipada está dada por:  
+$$\Delta W = \int_{x_1}^{x_2} b \dot{x}^2 \, dt = b \int_{\dot{x}_1}^{\dot{x}_2} \dot{x}^2 \, dt$$  
+Sustituyendo los valores:  
+$$\Delta W = 50 \, \text{N·s/m} \cdot \left( \frac{2^2}{2} - \frac{0^2}{2} \right) = 100 \, \text{J}$$
 
 
 ## 10. Conclusiones
 En esta clase hemos aprendido los conceptos fundamentales de energía cinética y energía potencial, aplicados principalmente a sistemas de masa-resorte. Estos conceptos son clave para entender el comportamiento dinámico de los sistemas mecánicos y sus aplicaciones prácticas en la ingeniería. También hemos visto cómo la energía se disipa en sistemas con fricción, y cómo estos principios son aplicables en diferentes áreas, como los circuitos eléctricos.
 
 ## 11. Referencias
-Agregue un subtítulo al final donde pueda poner todas las referencias consultadas incluyendo el origen o fuente de los ejercicios planteados. Tambien dentro del texto referencie los textos o artículos consultados y las figuras y tablas dentro de la explicación de las mismas.
+Dinámica de sistemas, Ogata, K., Prentice 
+Hall, 1987
+
