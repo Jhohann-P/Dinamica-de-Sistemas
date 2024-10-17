@@ -12,28 +12,42 @@ En esta clase, se explora la relación entre las fuerzas y las energías que act
 🔑 Energía potencial en un resorte: Es la energía almacenada debido a la deformación de un resorte. Se puede expresar como $U = \frac{1}{2}kx^2$, donde $k$ es la constante del resorte y $x$ la deformación.
 
 ## 3. Subsecciones
-Se define como la energía asociada con el movimiento de un cuerpo. La fórmula básica de la energía cinética es:  
-T = 1/2mv^2  
-Donde $m$ es la masa del cuerpo y $v$ es la velocidad.  
-3.2. Potencia
+La energía asociada con el movimiento de un cuerpo se define como:
+
+$$T = \frac{1}{2}mv^2$$
+
+Donde:
+- \( m \) es la masa del cuerpo.
+- \( v \) es la velocidad.
+
+### 3.2 Potencia
 La potencia en un sistema mecánico se relaciona con la tasa de cambio de la energía o trabajo con respecto al tiempo:  
-P = DW/DT
-3.3. Aplicación en un Resorte
-La energía almacenada en un resorte está dada por la siguiente fórmula, que representa la energía potencial elástica:  
-U=1/2kx^2  
-Donde $k$ es la constante del resorte y $x$ es la deformación.  
+
+$$P = \frac{\Delta W}{\Delta T}$$
+
+### 3.3 Aplicación en un Resorte
+La energía almacenada en un resorte está dada por la siguiente fórmula, que representa la energía potencial elástica:
+
+$$
+U = \frac{1}{2}kx^2
+$$
+
+Donde:
+- \( k \) es la constante del resorte.
+- \( x \) es la deformación.
 
 ## 4. Ejemplos
 💡Ejemplo 1:  
 
 Dado un sistema con un resorte, calcular la energía potencial almacenada si la constante del resorte es $k = 200 , N/m$ y la deformación es $x = 0.05 , m$.  
-Solución: U=(1/2)(200)(0.05)^2=0.25J  
+Solución: $$U = \frac{1}{2}(200)(0.05)^2 = 0.25 \, \text{J}$$
 
 💡Ejemplo 2:
 
 Un bloque de masa $2 , kg$ se mueve con una velocidad de $3 , m/s$. Calcular su energía cinética.  
 
-Solución: T=1/2(2)(3)^2=9J  
+Solución: 
+$$T = \frac{1}{2}(2)(3)^2 = 9 \, \text{J}$$
 
 💡Ejemplo 3:  
 ![image](https://github.com/user-attachments/assets/b12052ab-1391-42bb-9fd5-b9b8cd60d8e7)  
