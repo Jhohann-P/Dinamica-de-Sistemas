@@ -46,11 +46,10 @@ Todas las figuras que incluya deben ser generadas por ustedes, **no utilizar las
 
 💡**Ejemplo 2:**
 
-![Figura de prueba](images/plantilla/Captura2.PNG)
+![image](https://github.com/user-attachments/assets/161c4f52-6dbe-44df-820b-f4a3d2195659)  
+Figura 1. Representación del circuito RLC utilizado en el ejemplo.
 
-Figura 1. Figura de prueba
 
-Incluya la respectiva etiqueta a modo de descripción de la figura y mantenga numeración consecutiva para todas las figuras de la clase.
 
 ## 7. Tablas
 | Componente  | Valor    |
@@ -77,10 +76,108 @@ sol = dsolve(eqn);
 }
 
 ## 9. Ejercicios
-Deben agregar 2 ejercicios con su respectiva solución, referentes a los temas tratados en cada una de las clases. Para agregar estos, utilice la etiqueta #, es decir como un nuevo título dentro de la clase con la palabra 'Ejercicios'. Cada uno de los ejercicios debe estar numerado y con su respectiva solución inmediatamente despues del enunciado. Antes del subtitulo de cada ejercicio incluya el emoji 📚
+
+### 📚 **Ejercicio 1:** 
+Plantea un circuito serie con una resistencia de 5Ω y un capacitor de 1F conectado a una fuente de voltaje de 10V. Desarrolla la ecuación diferencial y resuélvela para determinar la corriente en el tiempo.
+
+#### Solución:
+
+1. **Ecuación del circuito**: Aplicando la ley de voltaje de Kirchhoff (KVL) al circuito:  
+
+   $$V(t) = R \frac{dI}{dt} + \frac{1}{C} \int I \, dt$$
+
+   Para los valores dados (R = 5Ω, C = 1F, V(t) = 10V):  
+
+   $$10 = 5 \frac{dI}{dt} + \frac{1}{1} \int I \, dt$$  
+
+2. **Derivando y simplificando**:   
+   La ecuación se convierte en una ecuación diferencial de primer orden:  
+
+   $$\frac{dI}{dt} + \frac{1}{5}I = 2$$  
+
+3. **Resolviendo la ecuación diferencial**:    
+   La solución homogénea es de la forma:  
+
+   $$I_h(t) = Ce^{-t/5}$$  
+
+   Para la solución particular, asumiendo que la corriente llega a un valor constante en el tiempo (cuando t → ∞), tenemos:  
+
+   $$I_p(t) = 10$$  
+
+4. **Solución general**:    
+   La solución completa es la suma de la solución homogénea y particular:  
+
+   $$I(t) = 10 + Ce^{-t/5}$$  
+
+5. **Condiciones iniciales**:  
+   Si inicialmente no hay corriente en el circuito (I(0) = 0):  
+
+   $$0 = 10 + C \Rightarrow C = -10$$  
+
+   Entonces, la solución final es:  
+
+   $$I(t) = 10(1 - e^{-t/5})$$  
+
+#### Respuesta:  
+La corriente en función del tiempo es:  
+
+$$I(t) = 10(1 - e^{-t/5}) \, \text{A}$$  
+___
+
+### 📚 **Ejercicio 2:**  
+Para un circuito serie compuesto por una resistencia de 2Ω y un inductor de 0.5H, con una fuente de voltaje de 12V, desarrolla la ecuación diferencial correspondiente y resuélvela para encontrar el voltaje a través del inductor con respecto al tiempo.  
+
+#### Solución:  
+
+1. **Ecuación del circuito**: Aplicamos la ley de Kirchhoff:  
+
+   $$V(t) = L \frac{dI}{dt} + R I$$  
+
+   Para los valores dados (R = 2Ω, L = 0.5H, V(t) = 12V):  
+
+   $$12 = 0.5 \frac{dI}{dt} + 2I$$  
+
+2. **Reorganizando**:    
+   La ecuación diferencial es:  
+
+   $$\frac{dI}{dt} + 4I = 24$$  
+
+3. **Resolviendo la ecuación diferencial**:  
+   La solución homogénea es de la forma:
+
+   $$I_h(t) = Ce^{-4t}$$  
+
+   Para la solución particular, asumimos una corriente constante a largo plazo:  
+
+   $$ I_p(t) = 6 $$  
+
+4. **Solución general**:    
+   La solución completa es:  
+
+   $$ I(t) = 6 + Ce^{-4t} $$  
+
+5. **Condiciones iniciales**:    
+   Si inicialmente no hay corriente (I(0) = 0):  
+
+   $$0 = 6 + C \Rightarrow C = -6$$  
+
+   La solución final es:  
+
+   $$I(t) = 6(1 - e^{-4t})$$  
+
+6. **Voltaje en el inductor**:    
+   El voltaje en el inductor es:  
+
+   $$V_L(t) = L \frac{dI}{dt} = 0.5 \times 24 e^{-4t} = 12e^{-4t}$$  
+
+#### Respuesta:  
+El voltaje a través del inductor es:  
+
+$$V_L(t) = 12 e^{-4t} \, \text{V}$$  
+
 
 ## 10. Conclusiones
-En esta clase se abordaron los conceptos clave sobre el análisis de circuitos eléctricos en serie que contienen resistencias, inductores y capacitores. Se discutieron las ecuaciones diferenciales involucradas y su importancia para predecir el comportamiento del circuito en el tiempo. Además, se practicó la solución de estas ecuaciones y su implementación en MATLAB.
+En esta clase se abordaron los conceptos clave sobre el análisis de circuitos eléctricos en serie que contienen resistencias, inductores y capacitores. Se dieron a conocer las ecuaciones diferenciales involucradas. Además, se practicó la solución de estas ecuaciones.
 
 ## 11. Referencias
 Agregue un subtítulo al final donde pueda poner todas las referencias consultadas incluyendo el origen o fuente de los ejercicios planteados. Tambien dentro del texto referencie los textos o artículos consultados y las figuras y tablas dentro de la explicación de las mismas.
