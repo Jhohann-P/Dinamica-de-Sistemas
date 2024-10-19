@@ -120,4 +120,4 @@ Esta es la ecuación diferencial que describe el sistema térmico en términos d
 En esta clase, aprendimos a modelar el comportamiento de amplificadores no inversores, sistemas hidráulicos y térmicos utilizando las leyes de Kirchhoff y modelos simplificados. Esto nos permite entender mejor cómo los sistemas electrónicos, hidráulicos y térmicos pueden ser analizados y diseñados utilizando ecuaciones diferenciales y conceptos de física.
 
 ## 9. Referencias
-
+https://amplificadores.info/amp-op/no-inversor
