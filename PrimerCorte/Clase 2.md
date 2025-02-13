@@ -13,7 +13,7 @@ Encontrar funciones que determinan el tiempo de una variable o su cambio.
 ### Derivada de una función
 
 La derivada de una función $f(t)$ con respecto a $t$ se denota como:  
-\frac{df(t)}{dt}  
+$$\frac{df(t)}{dt}$$  
 Recordando que la derivada es la pendiente de una curva, tomamos un ejemplo:  
 F(x) = x^2  
 La derivada de esta función es:  
@@ -21,7 +21,7 @@ F'(x) = 2x
 F'(2) = 4  
 F'(3) = 6  
 ### 3.1. Modelos de ecuaciones Diferenciales.  
-a1 d^2F/dt`2 + a2 df/dt + a3f= u(t)  
+$$a1 d^2F/dt`2 + a2 df/dt + a3f= u(t)$$  
 Donde la solución se convierte en un función, en este caso función de (t)  
 ### 3.2. Transformada de laplace
 Es un cambio de función de variable real a una función de variable compleja. La transformada de laplace muestra las señales 
@@ -30,9 +30,9 @@ x(t) - X(s)
 - Transformada inversa  
 X(s) - x(t)  
 - Transformada de una función   
-l{f(t)} = F(s)  
+$$l{f(t)} = F(s)$$  
 - Transformada de la derivada  
-L{f′(t)}=sL{f(t)}−f(0)  
+$$L{f′(t)}=sL{f(t)}−f(0)$$  
 L denota la Transformada de Laplace.  
 𝑠 es la variable compleja de la transformada de Laplace.  
 𝑓(0) es el valor de la función en 𝑡=0.  
@@ -79,54 +79,40 @@ MATLAB:
 
 ## 7. Ejercicios
 📚 Transformada de Laplace:  
-### Ejercicio 1: Transformada de Laplace de \( f(t) = t^2 e^{3t} \)
+### Ejercicio 1: Transformada de Laplace de $$\( f(t) = t^2 e^{3t} \)$$
 
-Calcular la transformada de Laplace de \( f(t) = t^2 e^{3t} \).
+Calcular la transformada de Laplace de $$\( f(t) = t^2 e^{3t} \)$$.
 
-\[
-\mathcal{L}\{f(t)\} = \int_0^\infty f(t) e^{-st} dt
-\]
+$$\[\mathcal{L}\{f(t)\} = \int_0^\infty f(t) e^{-st} dt\]$$
 
 Sabemos que:
 
-\[
-\mathcal{L}\{t^n e^{at}\} = \frac{n!}{(s - a)^{n+1}}, \quad \text{para} \quad \Re(s) > a
-\]
+$$\[\mathcal{L}\{t^n e^{at}\} = \frac{n!}{(s - a)^{n+1}}, \quad \text{para} \quad \Re(s) > a\]$$
 
 Aplicamos con \( n = 2 \) y \( a = 3 \):
 
-\[
-\mathcal{L}\{t^2 e^{3t}\} = \frac{2!}{(s - 3)^3}
-\]
+$$\[\mathcal{L}\{t^2 e^{3t}\} = \frac{2!}{(s - 3)^3}\]$$
 
 Por lo tanto:
 
-\[
-\mathcal{L}\{t^2 e^{3t}\} = \frac{2}{(s - 3)^3}
-\]
+$$\[\mathcal{L}\{t^2 e^{3t}\} = \frac{2}{(s - 3)^3}\]$$
 
 📚 Transformada de laplace:  
 ### Ejercicio 2: Transformada de Laplace de \( f(t) = \sin(2t) \)
 
-Calcular la transformada de Laplace de \( f(t) = \sin(2t) \).
+Calcular la transformada de Laplace de $$\( f(t) = \sin(2t) \)$$
 
 Sabemos que:
 
-\[
-\mathcal{L}\{\sin(at)\} = \frac{a}{s^2 + a^2}
-\]
+$$\[\mathcal{L}\{\sin(at)\} = \frac{a}{s^2 + a^2}\]$$
 
 Aplicamos con \( a = 2 \):
 
-\[
-\mathcal{L}\{\sin(2t)\} = \frac{2}{s^2 + 2^2}
-\]
+$$\[\mathcal{L}\{\sin(2t)\} = \frac{2}{s^2 + 2^2}\]$$
 
 Por lo tanto:
 
-\[
-\mathcal{L}\{\sin(2t)\} = \frac{2}{s^2 + 4}
-\]
+$$\[\mathcal{L}\{\sin(2t)\} = \frac{2}{s^2 + 4}\]$$
 
 
 ## 6. Conclusiones
